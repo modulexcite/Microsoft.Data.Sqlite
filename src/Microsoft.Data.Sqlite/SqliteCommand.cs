@@ -13,6 +13,9 @@ using Microsoft.Data.Sqlite.Interop;
 
 namespace Microsoft.Data.Sqlite
 {
+    /// <summary>
+    /// Represents a SQL statement to be executed against a SQLite database.
+    /// </summary>
     public class SqliteCommand : DbCommand
     {
         private readonly Lazy<SqliteParameterCollection> _parameters = new Lazy<SqliteParameterCollection>(
